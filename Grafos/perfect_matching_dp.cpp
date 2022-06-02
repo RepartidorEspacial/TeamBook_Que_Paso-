@@ -3,9 +3,15 @@
 
 int n; 
 double cost[20][20] , memo[1<<20]; 
+/*
+*   min-cost perfect matching for regular/complete graph 
+*
+*    complexity O( n * 2^n * m  )  n <= 20 
+*
+*   problem :
+*       https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1852
+*/
 
-//min-cost perfect matching for regular graph 
-//complexity O( n * 2^n * m  )  n <= 20 
 
 double dp(int mask )
 {
